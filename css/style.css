@@ -1,3 +1,18 @@
+body{
+  background:gray;
+}
+
+.container{
+  padding-top:10px;
+  background:white;
+}
+
+#logo{
+  max-width:30%;
+  padding-bottom:5%;
+}
+
+/*------------Navigation Bar -----------------*/
 .navbar-wrapper{
   margin-top:10px;
 }
@@ -8,5 +23,8 @@
 
 nav{
   height:50px;
-  border:1px solid blue;
+}
+.navbar-right button{
+  margin-top:10%;
+  margin-right:10px;
 }
