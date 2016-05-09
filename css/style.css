@@ -1,0 +1,12 @@
+.navbar-wrapper{
+  margin-top:10px;
+}
+
+.navbar{
+  margin-bottom:0px;
+}
+
+nav{
+  height:50px;
+  border:1px solid blue;
+}
