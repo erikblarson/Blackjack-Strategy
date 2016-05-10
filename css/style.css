@@ -1,10 +1,10 @@
 body{
-  background:gray;
+  background:#e9e9e9;
 }
 
 .container{
   padding-top:10px;
-  background:white;
+  background:#e9e9e9;
 }
 
 #logo{
@@ -14,7 +14,7 @@ body{
 
 /*------------Navigation Bar -----------------*/
 .navbar-wrapper{
-  margin-top:10px;
+
 }
 
 .navbar{
@@ -27,4 +27,30 @@ nav{
 .navbar-right button{
   margin-top:10%;
   margin-right:10px;
+}
+.header{
+  padding-top:50px;
+  background:#49ad68;
+  height:215px;
+
+}
+.header-logo{
+  margin-left:15%;
+  width:810px;
+  height:200px;
+  background:url(../img/strategylogotest2.png) no-repeat;
+}
+
+#content-panel{
+  margin-left:0px;
+  margin-right:0px;
+}
+#main{
+  margin-left:-5px;
+  margin-right:5px;
+  background:white;
+}
+
+#side{
+  background:white;
 }
