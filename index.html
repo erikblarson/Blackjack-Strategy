@@ -15,6 +15,18 @@
         <div class="header-logo">
 
         </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div id="nav-container" class="container">
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#">Links</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
 
         <!-- <nav class="navbar navbar-inverse">
@@ -43,7 +55,7 @@
   </header>
   <div class="container">
     <div id="content-panel" class="row">
-      <div id="main" class="col-xs-12 col-md-7">
+      <div id="main" class="col-xs-12 col-md-7 col-lg-7">
         <h1>Hello World!</h1>
         <h3>test</h3>
         <h3>test</h3>
@@ -51,15 +63,49 @@
         <h3>test</h3>
         <h3>test</h3>
         <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
       </div>
-      <div id="side" class="col-md-5">
-        <h2>OFFERS</h2>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-<h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
+      <div id="side" class="col-xs-12 col-md-5 col-lg-5">
+        <div data-spy="affix" data-offset-top="150" data-offset-bottom="500">
+          <h2>OFFERS</h2>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+          <h3>test</h3>
+        </div>
       </div>
     </div>
 
@@ -71,5 +117,23 @@
   </footer>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+  function checkScroll(){
+      var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+      if($(window).scrollTop() > startY){
+          $('.navbar').addClass("scrolled");
+      }else{
+          $('.navbar').removeClass("scrolled");
+      }
+  }
+
+  if($('.navbar').length > 0){
+      $(window).on("scroll load resize", function(){
+          checkScroll();
+      });
+  }
+
+</script>
 </body>
 </html>

@@ -1,11 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body{
   background:#e9e9e9;
+   font-family: 'Montserrat', sans-serif;
 }
 
-.container{
-  padding-top:10px;
-  background:#e9e9e9;
-}
 
 #logo{
   max-width:30%;
@@ -28,8 +26,13 @@ nav{
   margin-top:10%;
   margin-right:10px;
 }
+
+.nav-item{
+  width:200px;
+
+}
 .header{
-  padding-top:50px;
+  padding-top:55px;
   background:#49ad68;
   height:215px;
 
@@ -41,16 +44,69 @@ nav{
   background:url(../img/strategylogotest2.png) no-repeat;
 }
 
+.navbar{
+  background-color:rgba(0, 0, 0, 0.55);
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 1); //NON-IE
+}
+
+.navbar.scrolled .navbar-nav>li>a:hover {
+  color:#49ad68;
+}
+
+.navbar li{
+  text-align:center;
+  border-left:1px solid #49ad68;
+}
+.navbar li:last-child{
+  border-right:1px solid #49ad68;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color:black;
+}
+
+
 #content-panel{
+  margin-top:10px;
   margin-left:0px;
   margin-right:0px;
+
 }
 #main{
-  margin-left:-5px;
-  margin-right:5px;
+
+  margin-left:-15px;
+  margin-right:15px;
   background:white;
 }
 
 #side{
   background:white;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+  background:white;
+}
+
+.affix-top {
+  width: 100%;
+    background:white;
+}
+
+.affix-bottom {
+  width: 100%;
+  position: absolute;
+    background:white;
 }
