@@ -15,15 +15,6 @@ body{
   display:none;
 }
 
-.navbar-right button{
-  margin-top:10%;
-  margin-right:10px;
-}
-
-.nav-item{
-  width:200px;
-}
-
 .header{
   padding-top:55px;
   background:#49ad68;
@@ -77,22 +68,38 @@ body{
 .navbar-inverse .navbar-nav>li>a {
     color: white;
 }
-
-.navbar-inverse .navbar-nav>li>a:hover {
+.nav-item:hover {
     background-color:black;
 }
+
 @media(max-width:1040px){
   .header{
     height:50px;
+    padding-top:0;
   }
   .header-logo{
     display:none;
   }
+  .navbar-inverse .navbar-nav{
+    padding-right:0;
+  }
+
 }
 @media(max-width:767px) {
+  .header{
+    height:56px;
+    padding-top:0;
+  }
   #navbar .nav-item{
-    width:100%;
+    margin-left:10%;
+    width:80%;
     text-align: center;
+    border-bottom:1px solid #49ad68;
+    border-left:none;
+    border-right:none;
+  }
+  #navbar .nav-item:last-child{
+    border-bottom:0px;
   }
   #brand-name{
     display:block;
