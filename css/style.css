@@ -15,10 +15,6 @@ body{
   display:none;
 }
 
-.navbar-wrapper{
-
-}
-
 .navbar-right button{
   margin-top:10%;
   margin-right:10px;
@@ -26,14 +22,14 @@ body{
 
 .nav-item{
   width:200px;
-
 }
+
 .header{
   padding-top:55px;
   background:#49ad68;
   height:215px;
-
 }
+
 .header-logo{
   margin-left:18%;
   width:810px;
@@ -86,8 +82,7 @@ body{
 }
 
 @media(max-width:767px) {
-
-    #navbar .nav-item{
+  #navbar .nav-item{
     width:100%;
     text-align: center;
   }
@@ -104,7 +99,6 @@ body{
 
 }
 #main{
-
   margin-left:-15px;
   margin-right:15px;
   background:white;
@@ -113,7 +107,6 @@ body{
 
 .side{
   background:white;
-
 }
 
 .inner-side{
@@ -127,7 +120,6 @@ background:white;
 
 .affix-top{
     margin-left:-15px;
-
 }
 
 .affix-bottom{
