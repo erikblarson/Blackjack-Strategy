@@ -6,54 +6,144 @@
   <meta name="viewport" content="width=device-width, initial-scale= 1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-6 col-md-3">
-        <img id="logo" src="img/blackjack_icon.png"/>
-      </div>
-      <div class="col xs-6 col-md-9">
-            <h1> Blackjack Strategy</h1>
-      </div>
-    </div>
-  </div>
   <header>
     <div class="navbar-wrapper">
-      <div class="container">
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
+      <div class="header">
+        <div class="header-logo"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="brand-name" class="navbar-brand" href="#">Blackjack Strategy</a>
+          </div>
+          <div id="nav-container" class="container">
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Links</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <button type="submit" class="btn btn-success">Sign In</button>
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#">Links</a></li>
+                <li class="nav-item"><a href="#">Wanna Get Away?</a></li>
               </ul>
             </div>
+          </div>
         </nav>
       </div>
     </div>
   </header>
   <div class="container">
-    <h1>Hello World!</h1>
+    <div id="content-panel" class="row">
+      <div class="col-xs-12 col-md-5 col-lg-5 col-md-push-7 side text-center"  >
+        <div id="inner-side" data-spy="affix" data-offset-top="165" data-offset-bottom="230" data-clampedwidth=".side" >
+          <div class="offer">
+            <h2>OFFERS</h2>
+            <h3>test</h3>
+            <button type="submit" title="Sign Up">Sign Up</button>
+          </div>
+          <div class="offer">
+            <h2>OFFERS</h2>
+            <h3>test</h3>
+            <button type="submit" title="Sign Up">Sign Up</button>
+          </div>
+          <div class="offer">
+            <h2>OFFERS</h2>
+            <h3>test</h3>
+            <button type="submit" title="Sign Up">Sign Up</button>
+          </div>
+          <div class="offer">
+            <h2>OFFERS</h2>
+            <h3>test</h3>
+            <button type="submit" title="Sign Up">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div id="main" class="col-xs-12 col-md-7 col-lg-7 col-md-pull-5">
+        <h1>Hello World!</h1>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+        <h3>test</h3>
+      </div>
+    </div>
   </div>
-  <footer>
+  <footer class="footer">
 
   </footer>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      /*
+      * Clamped-width.
+      * Usage:
+      *  <div data-clampedwidth=".myParent">This long content will force clamped width</div>
+      *
+      * Author: LV
+      */
+      $('[data-clampedwidth]').each(function () {
+          var elem = $(this);
+          var parentPanel = elem.data('clampedwidth');
+          var resizeFn = function () {
+              var sideBarNavWidth = $(parentPanel).width() + 30;
+              elem.css('width', sideBarNavWidth);
+          };
+
+          resizeFn();
+          $(window).resize(resizeFn);
+      });
+    });</script>
+  <script>
+  function checkScroll(){
+      var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+      if($(window).scrollTop() > startY){
+          $('.navbar').addClass("scrolled");
+      }else{
+          $('.navbar').removeClass("scrolled");
+      }
+  }
+
+  if($('.navbar').length > 0){
+      $(window).on("scroll load resize", function(){
+          checkScroll();
+      });
+  }
+
+
+</script>
 </body>
 </html>
