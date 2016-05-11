@@ -35,6 +35,7 @@ body{
   width:810px;
   height:200px;
   background:url(../img/strategylogotest2.png) no-repeat;
+  background-size:100% auto;
 }
 
 .navbar{
@@ -80,7 +81,14 @@ body{
 .navbar-inverse .navbar-nav>li>a:hover {
     background-color:black;
 }
-
+@media(max-width:1040px){
+  .header{
+    height:50px;
+  }
+  .header-logo{
+    display:none;
+  }
+}
 @media(max-width:767px) {
   #navbar .nav-item{
     width:100%;
@@ -137,6 +145,16 @@ background:white;
   margin-bottom:30px;
 }
 
+@media(max-width:1007px){
+  .affix {
+    position: static;
+  }
+  #main{
+    margin-left:0;
+    margin-right:0;
+    margin-top:15px;
+  }
+}
 /*-------------------------- FOOTER -----------------------------*/
 .footer{
   background:#49ad68;
